@@ -1,5 +1,6 @@
 # advanced-program-probe
-
+## Реєструємося на Pythonanywhere
+[Pythonanywhere](https://www.pythonanywhere.com/)  
 <img src = "img/advp_01.jpg">  
 <img src = "img/advp_02.jpg">  
 <img src = "img/advp_03.jpg">  
@@ -24,6 +25,10 @@
 <img src = "img/advp_22.jpg">  
 <img src = "img/advp_23.jpg">  
 <img src = "img/advp_24.jpg">  
+
+## Робимо FrontEnd-частину
+[Скачаємо файли FE-частини](https://github.com/mikh-maksi/ap-probe-fe)  
+
 <img src = "img/advp_25.jpg">  
 <img src = "img/advp_26.jpg">  
 <img src = "img/advp_27.jpg">  
