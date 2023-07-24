@@ -25,11 +25,12 @@
 <img src = "img/advp_22.jpg">  
 <img src = "img/advp_23.jpg">  
 <img src = "img/advp_24.jpg">  
+<img src = "img/advp_25.jpg">  
 
 ## Робимо FrontEnd-частину
 [Скачаємо файли FE-частини](https://github.com/mikh-maksi/ap-probe-fe)  
 
-<img src = "img/advp_25.jpg">  
+<img src = "img/advp_26_0.jpg">  
 <img src = "img/advp_26.jpg">  
 <img src = "img/advp_27.jpg">  
 <img src = "img/advp_28.jpg">  
