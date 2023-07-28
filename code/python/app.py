@@ -1,5 +1,12 @@
 from flask import Flask
+from flask import request, jsonify
+from os import path
+import json
+import sqlite3
 from flask_cors import CORS
+
+
+
 
 app = Flask(__name__)
 CORS(app, support_credentials=True)
@@ -22,7 +29,6 @@ def quiz():
         else:
             n = int(request.args.get('n'))
     answer=''
-
     quiz_arr=[]
     quiz_arr.append({"question_arr":["Яка середня заробітна плата Python-розробника в Україні (червень, 2023)?"],"title_arr":["Зарплата розробника на Python"],"a1_arr":["$1200"],"a2_arr":["$2100"],"a3_arr":["$2700"],"a4_arr":["$3200"],"answer_arr":["$2700"],"n_right_answer_arr":["3"],"total_n":"4"})
     quiz_arr.append({"question_arr":["Яка середня заробітна плата JavaScript-розробника в Україні (червень, 2023)?"],"title_arr":["Зарплата розробника на JacaScript"],"a1_arr":["$1000"],"a2_arr":["$1500"],"a3_arr":["$2000"],"a4_arr":["$2500"],"answer_arr":["$2500"],"n_right_answer_arr":["4"],"total_n":"4"})
@@ -35,6 +41,7 @@ def quiz():
         answer="Over"
 
     return answer
+
 
 
 if __name__ == '__main__':
