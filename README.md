@@ -49,3 +49,6 @@
 <img src = "img/advp_39.jpg">  
 <img src = "img/advp_40.jpg">  
 <img src = "img/advp_41.jpg">  
+
+# Вихідний код:
+[Вихідний код](https://github.com/mikh-maksi/advanced-program-probe/tree/main/code)
