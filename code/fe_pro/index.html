@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="shortcut icon" href="images/GoIteensLogo.svg" type="image/x-icon">
+  <title>GoIteens Quiz</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="header">
+      <div class="header_title">
+        <img src="images/GoIteensLogo.svg">
+        <div>Номер питання: <span id="n"></span></div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="wrapper" id="wrapper">
+        <div id="questions">
+          <h2 class="main_quiz-title" id="title"></h2>
+          <p class="main_quiz-question" id="question"></p>
+          <form>
+            <div>
+              <input type="radio" name="year" id="y1">
+              <label for="y1" id="a1"></label>
+            </div>
+            <div>
+              <input type="radio" name="year" id="y2">
+              <label for="y2" id="a2"></label>
+            </div>
+            <div>
+              <input type="radio" name="year" id="y3">
+              <label for="y3" id="a3"></label>
+            </div>
+            <div>
+              <input type="radio" name="year" id="y4">
+              <label for="y4" id="a4"></label>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer">
+        <button class="footer_btn-get" id="get_answer">Дати відповідь</button>
+        <div class="right_div hidden" id="right_div">
+          <p class="right" id="right">Вірна відповідь</p>
+          <button class="footer_btn-next" id="next_question">Наступне питання</button>
+        </div>
+        <div class="wrong_div hidden" id="wrong_div">
+          <p class="wrong" id="wrong">Неправильна відповідь</p>
+          <button class="footer_btn-show-answ" id="view_answer">Подивитися відповідь</button>
+        </div>
+        <p id="answer" class="answer hidden"></p>
+      </div>
+      <div id="total_div">
+        <p class="total">Кількість правильних відповідей: <span id="n_right"></span> (з першого разу).</p>
+      </div>
+    </div>
+
+    <input type="hidden" value="0" id="n_question">
+  </div>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script>
+</body>
+
+</html>

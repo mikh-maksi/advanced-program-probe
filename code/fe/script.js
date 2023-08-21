@@ -53,7 +53,8 @@ next_question.addEventListener("click", f_next_question);
   }
 
 function answers(k){
-  query = 'https://mikhmaksi.pythonanywhere.com/quiz?author_id=0&n='+k;
+  adress = 'https://mikhmaksi3.pythonanywhere.com'
+  query = adress+'/quiz?n='+k;
   console.log(query);
   fetch(query).then(response => response.json())
   .then(function (quiz) {

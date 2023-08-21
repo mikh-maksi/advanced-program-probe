@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+*/
+
+:root {
+  --black-theme-text-color: white;
+  --white-theme-text-color: black;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: #777;
+  background-image: url(../images/markus-spiske-gcgves5H_Ac-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.container {
+  width: 80%;
+}
+
+/* ! HEADER */
+.header {
+  display: flex;
+}
+
+.header_title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+  text-align: center;
+  margin: auto 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 24px;
+  color: var(--black-theme-text-color);
+}
+
+.header_title img {
+  height: 100px;
+  width: auto;
+}
+
+/* ! MAIN */
+.main_quiz-title {
+  margin: 20px 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 600;
+  color: var(--black-theme-text-color);
+
+}
+
+.main_quiz-question {
+  margin: 20px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: var(--black-theme-text-color);
+
+}
+
+form>div>label {
+  margin: 10px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--black-theme-text-color);
+}
+
+input[type="radio"]:checked,
+input[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+input[type="radio"]:checked+label,
+input[type="radio"]:not(:checked)+label {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked+label:before,
+input[type="radio"]:not(:checked)+label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+}
+
+
+input[type="radio"]:checked+label:before,
+input[type="radio"]:not(:checked)+label:before {
+  border-radius: 100%;
+}
+
+input[type="radio"]:checked+label:after,
+input[type="radio"]:not(:checked)+label:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+input[type="radio"]:checked+label:after,
+input[type="radio"]:not(:checked)+label:after {
+  left: 5px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #FFCB59;
+}
+
+input[type="radio"]:not(:checked)+label:after {
+  opacity: 0;
+}
+
+input[type="radio"]:checked+label:after {
+  opacity: 1;
+}
+
+/* ! FOOTER */
+.footer button {
+  margin: 20px 0;
+  border: 1px solid #FFCB59;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px 15px;
+  transition: 1s ease;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--black-theme-text-color);
+}
+
+.footer button:hover {
+  cursor: pointer;
+  background-color: #FFCB59;
+  color: #000;
+}
+
+
+
+
+
+
+.right {
+  /* position: absolute;
+  right: -1000px;
+  top: 150px;
+  transition: all .3s ease; */
+
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 20px 0;
+  width: 350px;
+  text-align: center;
+  margin: auto 0;
+  border-radius: 5px;
+  border: 2px dashed green;
+  background-color: rgb(198, 255, 198);
+}
+
+.wrong {
+  /* position: absolute;
+  right: -1000px;
+  top: 150px;
+  transition: all .3s ease; */
+
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 20px 0;
+  width: 350px;
+  text-align: center;
+  margin: auto 0;
+  border-radius: 5px;
+  border: 2px dashed red;
+  background-color: rgb(255, 184, 184);
+}
+
+.victoryBlock {
+  background-color: white;
+  padding: 20px;
+  width: 70%;
+  border-radius: 5px;
+}
+
+.victoryBlock_title {
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.victoryBlock_subtitle {
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.answer {
+  margin: 40px 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--black-theme-text-color);
+}
+
+.total {
+  margin: 40px 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--black-theme-text-color);
+}
